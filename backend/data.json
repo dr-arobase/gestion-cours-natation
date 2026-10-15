@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": "TiPnPIsDPX0yNS3cNLU5m",
+      "email": "admin@example.com",
+      "password": "$2a$10$eKW3vnO.XbjKr0EPK.kNsunVgAkxhiUBlcOLQ7bVRN.q3vQkrB3Ce",
+      "firstName": "Admin",
+      "lastName": "User",
+      "role": "admin",
+      "permissions": {
+        "canManageSwimmers": true,
+        "canManageLifeguards": true,
+        "canViewStats": true,
+        "canManageUsers": true,
+        "canExportData": true,
+        "canManageSettings": true
+      },
+      "preferences": {
+        "theme": "light",
+        "language": "fr",
+        "notifications": true
+      },
+      "loginHistory": [
+        {
+          "date": "2026-02-12T20:02:59.895Z",
+          "ipAddress": "::1"
+        },
+        {
+          "date": "2026-02-12T20:19:48.113Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        },
+        {
+          "date": "2026-02-12T20:21:40.081Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        },
+        {
+          "date": "2026-02-12T20:22:01.467Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        },
+        {
+          "date": "2026-02-12T20:23:10.927Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        },
+        {
+          "date": "2026-02-12T20:24:00.079Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        },
+        {
+          "date": "2026-02-12T20:24:14.794Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        },
+        {
+          "date": "2026-02-12T20:24:28.203Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        },
+        {
+          "date": "2026-02-12T20:24:57.925Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        },
+        {
+          "date": "2026-02-12T20:25:34.265Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        },
+        {
+          "date": "2026-02-12T20:27:45.083Z",
+          "ipAddress": "::ffff:127.0.0.1"
+        }
+      ],
+      "createdAt": "2026-02-12T19:57:16.430Z",
+      "_id": "TiPnPIsDPX0yNS3cNLU5m"
+    }
+  ],
+  "swimmers": [],
+  "groups": [],
+  "lifeguards": [],
+  "equipment": []
+}

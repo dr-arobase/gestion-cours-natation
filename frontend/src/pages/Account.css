@@ -1,0 +1,68 @@
+.account-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.account-page h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.account-card {
+  background: var(--bg-secondary);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.account-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  font-size: 1.3rem;
+}
+
+.info-group {
+  margin-bottom: 1.5rem;
+}
+
+.info-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.info-group p {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.info-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .account-page {
+    padding: 1rem;
+  }
+}

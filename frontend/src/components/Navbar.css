@@ -1,0 +1,140 @@
+.navbar {
+  background: var(--bg-secondary);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.brand-icon {
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border: none;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.icon-button:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.logout-button:hover {
+  background: var(--danger-color);
+}
+
+.lang-text {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 968px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-secondary);
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-container {
+    padding: 1rem;
+  }
+
+  .navbar-brand span {
+    display: none;
+  }
+}

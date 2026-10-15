@@ -1,0 +1,290 @@
+.swimming-page {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.btn-export {
+  background: var(--accent-color);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.swimming-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.groups-sidebar {
+  background: var(--bg-secondary);
+  border-radius: 15px;
+  padding: 1.5rem;
+  height: fit-content;
+}
+
+.groups-sidebar h2 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.groups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.group-item {
+  padding: 1rem;
+  background: var(--bg-primary);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.group-item:hover {
+  transform: translateX(5px);
+  background: var(--hover-bg);
+}
+
+.group-item.active {
+  border-left-color: var(--primary-color);
+  background: var(--hover-bg);
+}
+
+.group-item h3 {
+  margin: 0 0 0.25rem 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.group-item p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.enrollment {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.swimmers-main {
+  background: var(--bg-secondary);
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.swimmers-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  max-width: 400px;
+  background: var(--bg-primary);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+  border-color: var(--primary-color);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.swimmers-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: var(--primary-color);
+  color: white;
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+  background: var(--hover-bg);
+}
+
+td {
+  padding: 1rem;
+  color: var(--text-primary);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--accent-color);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.icon-btn.edit {
+  background: var(--primary-color);
+  color: white;
+}
+
+.icon-btn.delete {
+  background: var(--danger-color);
+  color: white;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.no-data {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 968px) {
+  .swimming-content {
+    grid-template-columns: 1fr;
+  }
+
+  .groups-sidebar {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .swimmers-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .swimming-page {
+    padding: 1rem;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 0.75rem 0.5rem;
+  }
+}
